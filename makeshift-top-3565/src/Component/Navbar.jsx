@@ -1,5 +1,6 @@
 import logo from "../Images/Camlenslogo.png";
 import Navbar from "./Styles/Navbar.css";
+import {Link as ReactLink} from "react-router-dom"  
 import {
   Box,
   Flex,
@@ -39,7 +40,7 @@ export default function WithSubnavigation() {
       <Flex
         h="35px"
         bg="white"
-        border="2px solid black"
+        // border="2px solid black"
         justifyContent="space-between"
       >
         <Box>
@@ -96,7 +97,9 @@ export default function WithSubnavigation() {
             color={useColorModeValue('gray.800', 'white')}>
             Logo
           </Text> */}
+           <ReactLink   to="/">
           <img src={logo} alt="" width="60px" br="5px" />
+          </ReactLink>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -118,6 +121,7 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
+          <ReactLink  to="/signin"   >
           <Button
             // as={"a"}
             // fontSize={"sm"}
@@ -136,6 +140,10 @@ export default function WithSubnavigation() {
           >
             Sign In
           </Button>
+          </ReactLink>
+
+
+          <ReactLink to="/signup">
           <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
@@ -149,6 +157,7 @@ export default function WithSubnavigation() {
           >
             Sign Up
           </Button>
+          </ReactLink>
         </Stack>
       </Flex>
 
@@ -327,19 +336,19 @@ const NAV_ITEMS: Array<NavItem> = [
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
         href: "#",
-        class: "riya",
+       
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
         href: "#",
-        class: "riya",
+       
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
         href: "#",
-        class: "riya",
+      
       },
     ],
   },
@@ -350,13 +359,13 @@ const NAV_ITEMS: Array<NavItem> = [
         label: "Job Board",
         subLabel: "Find your dream design job",
         href: "#",
-        class: "riya",
+       
       },
       {
         label: "Freelance Projects",
         subLabel: "An exclusive list for contract work",
         href: "#",
-        class: "riya",
+       
       },
     ],
   },
@@ -368,6 +377,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Deals",
     href: "#",
-    class: "riya",
+   
   },
 ];

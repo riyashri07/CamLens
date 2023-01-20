@@ -1,108 +1,137 @@
-.deal{
-    width: 100%;
-     height: 150px; 
-    /* border: 2px solid red; */
-    display: flex;
-    background: #004387;
-    margin-top: 30px;
+.deal {
+  width: 100%;
+  height: 150px;
+  /* border: 2px solid red; */
+  display: flex;
+  background: #004387;
+  margin-top: 30px;
 }
 
-.h{
-    margin-left: 40px;
-    margin-top: 30px;
-    /* border: 1px solid black; */
-    width: 25%;
-    padding-bottom: 20px;
+.h {
+  margin-left: 40px;
+  margin-top: 30px;
+  /* border: 1px solid black; */
+  width: 25%;
+  padding-bottom: 20px;
 }
-.h h1{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-
+.h h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
 }
-.h h4{
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: rgb(165, 163, 163);
-}
-
-.insidedeal{
-    width: 70%;
-    /* border: 1px solid black; */
-    height: 120px;
-    display: flex;
-      margin-left: 160px;
-      margin-top:14px ;
-      margin-right: 17px;
-      background-color: white;
-      border-radius: 5px;
-      
-    
-
-
+.h h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(165, 163, 163);
 }
 
-.img{
-    width: 11%;
-    /* border: 1px solid black; */
-    margin-left: 30px;
-    margin-top: 10px;
-    
-}
-.star{
-    /* border: 1px solid black; */
-    margin-left: 30px;
-    margin-top: 30px;
-    text-align: left;
-}
-.star>h4{
-    font-size: 18px;
-    color: #004387;
-    
-}
-.star > button{
-   
-            
-            font-Weight:600px;
-            /* color:rgb(24, 15, 15); */
-            background-color: #004387;
-            width: 20%;
-            border-radius: 4px;
-            margin-top: 0px;
-            padding: 2px 2px;
-            color: rgb(250, 243, 243);
-}        
-
-.deal > h1{
-margin-right: 60rem;
-margin-top: 3rem;
-border: 1px solid green;
+.insidedeal {
+  width: 70%;
+  /* border: 1px solid black; */
+  height: 120px;
+  display: flex;
+  margin-left: 160px;
+  margin-top: 14px;
+  margin-right: 17px;
+  background-color: white;
+  border-radius: 5px;
 }
 
-.deal > h2{
-    margin-right: 60rem;
-    }
+.img {
+  width: 11%;
+  /* border: 1px solid black; */
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.star {
+  /* border: 1px solid black; */
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: left;
+}
+.star > h4 {
+  font-size: 18px;
+  color: #004387;
+}
+.star > button {
+  font-weight: 600px;
+  /* color:rgb(24, 15, 15); */
+  background-color: #004387;
+  width: 20%;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 2px 2px;
+  color: rgb(250, 243, 243);
+}
+
+.deal > h1 {
+  margin-right: 60rem;
+  margin-top: 3rem;
+  border: 1px solid green;
+}
+
+.deal > h2 {
+  margin-right: 60rem;
+}
+
+.box {
+  margin-top: 30px;
+}
+
+.double {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.blueline {
+  /* width: 100%; */
+  background-color: #004387;
+  color: white;
+  padding: 50px;
+}
+
+.blueline > h1 {
+  font-weight: bold;
+  margin: auto;
+  /* border: 1px solid black; */
+}
 
 
+.greyline{
+  background-color: #989a9c;
+   color: white;
+   padding: 50px;
+}
 
+.greyline > h1 {
+  font-weight: bold;
+  margin: auto;
+  font-size: larger;
+  /* border: 1px solid black; */
+}
+.greyline > h1 :hover{
+  color: #004387;
+  cursor: pointer;
+}
 
-   .box{
-    margin-top: 30px;
-   }
+.line{
+   background-color: #004387;
+  color: white;
+  padding: 30px;
+  margin-top: 20px;
+}
 
-   .double{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-
-   }
-
-
-
-   .grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-   }
+.line > h1 {
+  /* font-weight:bolder; */
+  font-size: 40px;
+  margin: auto;
+  /* border: 1px solid black; */
+}

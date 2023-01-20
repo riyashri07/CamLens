@@ -1,6 +1,7 @@
 import logo from "../Images/Camlenslogo.png";
-import Navbar from "./Styles/Navbar.css";
-import {Link as ReactLink} from "react-router-dom"  
+import navbar from "./Navbar.module.css";
+import { Link as ReactLink } from "react-router-dom"  
+
 import {
   Box,
   Flex,
@@ -45,24 +46,14 @@ export default function WithSubnavigation() {
       >
         <Box>
           <Flex>
-            <Text className="prenav" >
-             ADORAMA BUSINESS
-            </Text>
-            <Text className="prenav">
-             ADORAMA RENTALS
-            </Text>
-            <Text className="prenav" >
-             PRITIQUE
-            </Text>
-            <Text className="prenav" >
-              OUR BLOG
-            </Text>
+            <Text className="prenav">ADORAMA BUSINESS</Text>
+            <Text className="prenav">ADORAMA RENTALS</Text>
+            <Text className="prenav">PRITIQUE</Text>
+            <Text className="prenav">OUR BLOG</Text>
           </Flex>
         </Box>
         <Box>
-          <Flex>
-            
-          </Flex>
+          <Flex></Flex>
         </Box>
       </Flex>
       <Flex
@@ -97,8 +88,8 @@ export default function WithSubnavigation() {
             color={useColorModeValue('gray.800', 'white')}>
             Logo
           </Text> */}
-           <ReactLink   to="/">
-          <img src={logo} alt="" width="60px" br="5px" />
+          <ReactLink to="/">
+            <img src={logo} alt="" width="60px" br="5px" />
           </ReactLink>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -121,42 +112,44 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <ReactLink  to="/signin"   >
-          <Button
-            // as={"a"}
-            // fontSize={"sm"}
-            // fontWeight={400}
-            // variant={"link"}
-            // href={"#"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"#001e42"}
-            href={"#"}
-            _hover={{
-              bg: "olive",
-            }}
-          >
-            Sign In
-          </Button>
+          <ReactLink to="/signin">
+            <Button
+              // as={"a"}
+              // fontSize={"sm"}
+              // fontWeight={400}
+              // variant={"link"}
+              // href={"#"}
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"#001e42"}
+              href={"#"}
+              _hover={{
+                bg: "olive",
+              }}
+
+             
+            >
+              Sign In
+              
+            </Button>
           </ReactLink>
 
-
           <ReactLink to="/signup">
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"#001e42"}
-            href={"#"}
-            _hover={{
-              bg: "olive",
-            }}
-          >
-            Sign Up
-          </Button>
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"#001e42"}
+              href={"#"}
+              _hover={{
+                bg: "olive",
+              }}
+            >
+              Sign Up
+            </Button>
           </ReactLink>
         </Stack>
       </Flex>
@@ -225,13 +218,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.600") }}
+      _hover={{ bg: useColorModeValue(" #004387", "gray.600") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "white" }}
             fontWeight={500}
           >
             {label}
@@ -247,7 +240,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"white"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>
@@ -333,22 +326,35 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Products",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "Camera",
+        subLabel: "Monolights & Strobes",
         href: "#",
-       
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Lenses",
+        subLabel: "Mirrorless Lenses",
         href: "#",
-       
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Custom Photo Printing",
+        subLabel: "Custom Photo Prints",
         href: "#",
-      
+      },
+
+      {
+        label: "Desktop Computers",
+        subLabel: "All in one PC's",
+        href: "#",
+      },
+      {
+        label: "Computer Accessories",
+        subLabel: "Computer cables and adapters",
+        href: "#",
+      },
+      {
+        label: "Headphones & Earphones",
+        subLabel: "Multiple types",
+        href: "#",
       },
     ],
   },
@@ -356,16 +362,29 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Brands",
     children: [
       {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
+        label: "Canon",
+        subLabel: "Canon Cameras",
         href: "#",
-       
       },
       {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
+        label: "FujiFilm",
+        subLabel: "FujiFilm Cameras",
         href: "#",
-       
+      },
+      {
+        label: "Sony",
+        subLabel: "Sony Cameras",
+        href: "#",
+      },
+      {
+        label: "Nikon",
+        subLabel: "Nikon Cameras",
+        href: "#",
+      },
+      {
+        label: "Panasonic",
+        subLabel: "Panasonic Cameras",
+        href: "#",
       },
     ],
   },
@@ -377,6 +396,5 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Deals",
     href: "#",
-   
   },
 ];

@@ -22,24 +22,26 @@ import {
   
     return (
       <Flex
-        minH={'100vh'}
-        align={'center'}
-        justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-          <Stack align={'center'}>
-            <Heading fontSize={'4xl'} textAlign={'center'}>
+        minH={"100vh"}
+        align={"center"}
+        justify={"center"}
+        bg={useColorModeValue("gray.50", "gray.800")}
+      >
+        <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
+          <Stack align={"center"}>
+            <Heading fontSize={"4xl"} textAlign={"center"}>
               Sign up
             </Heading>
-            <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool features ✌️
+            <Text fontSize={"lg"} color={"gray.600"}>
+              to enjoy all of our cool Gadgets ✌️
             </Text>
           </Stack>
           <Box
-            rounded={'lg'}
-            bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
-            p={8}>
+            rounded={"lg"}
+            bg={useColorModeValue("white", "gray.700")}
+            boxShadow={"lg"}
+            p={8}
+          >
             <Stack spacing={4}>
               <HStack>
                 <Box>
@@ -62,13 +64,14 @@ import {
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
                 <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} />
-                  <InputRightElement h={'full'}>
+                  <Input type={showPassword ? "text" : "password"} />
+                  <InputRightElement h={"full"}>
                     <Button
-                      variant={'ghost'}
+                      variant={"ghost"}
                       onClick={() =>
                         setShowPassword((showPassword) => !showPassword)
-                      }>
+                      }
+                    >
                       {showPassword ? <ViewIcon /> : <ViewOffIcon />}
                     </Button>
                   </InputRightElement>
@@ -78,17 +81,18 @@ import {
                 <Button
                   loadingText="Submitting"
                   size="lg"
-                  bg={'blue.400'}
-                  color={'white'}
+                  bg={"#004387"}
+                  color={"white"}
                   _hover={{
-                    bg: 'blue.500',
-                  }}>
+                    bg: "blue.500",
+                  }}
+                >
                   Sign up
                 </Button>
               </Stack>
               <Stack pt={6}>
-                <Text align={'center'}>
-                  Already a user? <Link color={'blue.400'}>Login</Link>
+                <Text align={"center"}>
+                  Already a user? <Link color={"#004387"}>Login</Link>
                 </Text>
               </Stack>
             </Stack>

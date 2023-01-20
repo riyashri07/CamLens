@@ -41,15 +41,14 @@ export default function SimpleCard() {
       >
         <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"}>Sign in to your account</Heading>
+            <Heading fontSize={"4xl"}>Sign in to Camlens</Heading>
             <Text fontSize={"lg"} color={"gray.600"}>
-              to enjoy all of our cool <Link color={"blue.400"}>features</Link>{" "}
-              ✌️
+              to buy all of our cool <Link color={"#004387"}>Gadgets</Link> ✌️
             </Text>
           </Stack>
           <Box
             rounded={"lg"}
-            bg={useColorModeValue("white", "gray.700")}
+            bg={useColorModeValue("white", "#004387")}
             boxShadow={"lg"}
             p={8}
           >
@@ -79,10 +78,10 @@ export default function SimpleCard() {
                   justify={"space-between"}
                 >
                   <Checkbox>Remember me</Checkbox>
-                  <Link color={"blue.400"}>Forgot password?</Link>
+                  <Link color={"#004387"}>Forgot password?</Link>
                 </Stack>
                 <Button
-                  bg={"blue.400"}
+                  bg={"#004387"}
                   color={"white"}
                   _hover={{
                     bg: "blue.500",

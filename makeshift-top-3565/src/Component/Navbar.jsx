@@ -294,6 +294,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+       
         <Stack
           mt={2}
           pl={4}
@@ -304,11 +305,14 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
+               
               <Link key={child.label} py={2} href={child.href}>
                 {child.label}
               </Link>
+             
             ))}
-        </Stack>
+          </Stack>
+         
       </Collapse>
     </Stack>
   );

@@ -1,6 +1,6 @@
 import logo from "../Images/Camlenslogo.png";
 import navbar from "./Navbar.module.css";
-import { Link as ReactLink } from "react-router-dom"  
+import { Link as ReactLink } from "react-router-dom";
 
 import {
   Box,
@@ -112,7 +112,7 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <ReactLink to="/signin">
+          <ReactLink to="/signup">
             <Button
               // as={"a"}
               // fontSize={"sm"}
@@ -126,17 +126,14 @@ export default function WithSubnavigation() {
               bg={"#001e42"}
               href={"#"}
               _hover={{
-                bg: "olive",
+                bg: "teal",
               }}
-
-             
             >
-              Sign In
-              
+              Sign Up
             </Button>
           </ReactLink>
 
-          <ReactLink to="/signup">
+          <ReactLink to="/cart">
             <Button
               display={{ base: "none", md: "inline-flex" }}
               fontSize={"sm"}
@@ -145,10 +142,10 @@ export default function WithSubnavigation() {
               bg={"#001e42"}
               href={"#"}
               _hover={{
-                bg: "olive",
+                bg: "teal",
               }}
             >
-              Sign Up
+              Cart
             </Button>
           </ReactLink>
         </Stack>
@@ -294,7 +291,6 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-       
         <Stack
           mt={2}
           pl={4}
@@ -305,14 +301,11 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-               
               <Link key={child.label} py={2} href={child.href}>
                 {child.label}
               </Link>
-             
             ))}
-          </Stack>
-         
+        </Stack>
       </Collapse>
     </Stack>
   );
@@ -332,7 +325,7 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Camera",
         subLabel: "Monolights & Strobes",
-        href: "#",
+        href: "camera",
       },
       {
         label: "Lenses",

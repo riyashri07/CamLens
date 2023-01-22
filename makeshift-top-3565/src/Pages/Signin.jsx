@@ -22,8 +22,8 @@ let loginObj = {
   }
   
 export default function SimpleCard() {
- const [email, setEmail] = useState("") 
-  const [password, setPassword] = useState("") 
+ const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   
   //  const HandleEmail = (e) => {
   //    console.log(e.target.value)

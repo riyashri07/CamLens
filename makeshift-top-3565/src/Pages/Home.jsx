@@ -1,5 +1,5 @@
 import Carousel from "../Component/Carousel";
-import Footer from "../Component/Footer";
+// import Footer from "../Component/Footer";
 import Data from "../Data.json";
 import home from "./Home.module.css";
 import timer from "../Images/Timer.png";
@@ -116,7 +116,7 @@ const Home = () => {
       <div className={home.greyline}>
         <h1>HELP CENTER</h1>
       </div>
-      <Footer />
+     
     </>
   );
 };
